@@ -56,8 +56,13 @@ nav {
   background: rgb(57, 57, 57);
   padding: 10px;
   margin-bottom: 30px;
-  /*overflow: scroll;*/
-  white-space: nowrap;
+}
+
+@media(max-width:600px){
+  nav {
+    overflow: scroll;
+    white-space: nowrap;
+  }
 }
 
 nav span {
