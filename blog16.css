@@ -17,6 +17,16 @@ main {
   flex: 1 0 auto;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px; /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
 a {
   color: rgb(204, 153, 204);
   text-decoration: underline;
@@ -46,7 +56,7 @@ nav {
   background: rgb(57, 57, 57);
   padding: 10px;
   margin-bottom: 30px;
-  overflow: scroll;
+  /*overflow: scroll;*/
   white-space: nowrap;
 }
 
